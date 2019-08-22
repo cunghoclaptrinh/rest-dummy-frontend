@@ -5,8 +5,8 @@ import {
   SIGN_IN_REQUEST,
   SIGN_IN_ERROR,
   SIGN_OUT_SUCCESS,
-  SIGN_OUT_REQUEST,
-  SIGN_OUT_ERROR,
+  // SIGN_OUT_REQUEST,
+  // SIGN_OUT_ERROR,
   MY_POSTS_SUCCESS
 } from "./actions";
 import { signIn as apiSignIn } from "../api";
@@ -14,9 +14,9 @@ import { signIn as apiSignIn } from "../api";
 const signInRequest = createAction(SIGN_IN_REQUEST);
 const signInSuccess = createAction(SIGN_IN_SUCCESS);
 const signInError = createAction(SIGN_IN_ERROR);
-const signOutRequest = createAction(SIGN_OUT_REQUEST);
+// const signOutRequest = createAction(SIGN_OUT_REQUEST);
 const signOutSuccess = createAction(SIGN_OUT_SUCCESS);
-const signOutError = createAction(SIGN_OUT_ERROR);
+// const signOutError = createAction(SIGN_OUT_ERROR);
 
 export default createReducer(null, {
   [SIGN_IN_SUCCESS]: (_, action) => action.payload,
