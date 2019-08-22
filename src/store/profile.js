@@ -9,7 +9,7 @@ import {
   SIGN_OUT_ERROR,
   MY_POSTS_SUCCESS
 } from "./actions";
-import { signIn as apiSignIn, signOut as apiSignOut } from "../api";
+import { signIn as apiSignIn } from "../api";
 
 const signInRequest = createAction(SIGN_IN_REQUEST);
 const signInSuccess = createAction(SIGN_IN_SUCCESS);
@@ -41,13 +41,13 @@ export function signIn(email, password) {
 
 export function signOut() {
   return async dispatch => {
-    dispatch(signOutRequest());
+    // dispatch(signOutRequest());
 
-    try {
-      await apiSignOut();
-      dispatch(signOutSuccess());
-    } catch (ex) {
-      dispatch(signOutError(ex.message || "Unknown error."));
-    }
+    // try {
+    //   await apiSignOut();
+    dispatch(signOutSuccess());
+    // } catch (ex) {
+    //   dispatch(signOutError(ex.message || "Unknown error."));
+    // }
   };
 }

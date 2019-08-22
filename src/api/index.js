@@ -15,10 +15,6 @@ export async function signIn(email, password) {
   });
 }
 
-export async function signOut() {
-  return new Promise(resolve => setTimeout(resolve, _randomDelay()));
-}
-
 export async function loadPostsForHome() {
   const results = posts
     .filter(p => p.status === "published")
