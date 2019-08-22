@@ -1,0 +1,36 @@
+.chlt-layout__header__container,
+.chlt-layout__content__container {
+  max-width: 42rem;
+  margin: 0 auto;
+  /* padding: 1.5rem 1.125rem; */
+}
+
+.chlt-layout__header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chlt-layout__header__home {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 2rem;
+  /* line-height: 2.25rem; */
+  text-decoration: none;
+  color: white;
+}
+
+.chlt-layout__header__home:visited {
+  color: white;
+}
+
+.chlt-layout__content__container {
+  min-height: 100vh;
+  padding-top: 1.5rem;
+}
+
+.ant-card.chlt-blog-post-card {
+  margin-bottom: 1rem;
+}
